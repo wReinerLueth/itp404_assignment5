@@ -8,5 +8,6 @@ export default Ember.Route.extend({
     let subreddit = params.subreddit;
     let url = 'https://www.reddit.com/r/' + subreddit + '.json';
     return $.getJSON(url);
+    // return reddit(subreddit);
   }
 });

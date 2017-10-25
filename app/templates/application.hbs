@@ -1,6 +1,8 @@
 <h1>ITP 404 Assignment 5</h1>
 
-{{input type="text" enter="searchSubreddit" value=subreddit}}
-<button type="button" class="btn btn-primary" onclick={{action "searchSubreddit"}}>Search</button>
+<form onSubmit={{action "searchSubreddit"}}>
+{{input type="text" value=subreddit}}
+<button type="button" class="btn btn-sm btn-primary">Search</button>
+</form>
 
 {{outlet}}
