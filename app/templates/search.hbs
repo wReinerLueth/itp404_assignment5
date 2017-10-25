@@ -1,12 +1,14 @@
 <h3>Results</h3>
 
 {{#each model.data.children as |val|}}
-    <h4>{{val.data.title}}</h4>
-    <p>Domain: {{val.data.domain}}</p>
-    <p>Number of Comments: {{val.data.num_comments}}</p>
-    <p>Ups: {{val.data.ups}}</p>
-    <p>Downs: {{val.data.downs}}</p>
-    <p>Score: {{val.data.score}}</p>
+    <div class="sub">
+        <h4>{{val.data.title}}</h4>
+        <p>Domain: {{val.data.domain}}</p>
+        <p>Number of Comments: {{val.data.num_comments}}</p>
+        <p>Ups: {{val.data.ups}}</p>
+        <p>Downs: {{val.data.downs}}</p>
+        <p>Score: {{val.data.score}}</p>
+    </div>
 {{/each}}
 
 {{outlet}}
