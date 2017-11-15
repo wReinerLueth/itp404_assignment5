@@ -1,6 +1,7 @@
-<h3>Results</h3>
+import Ember from 'ember';
 
-{{#each model.data.children as |val|}}
+export default Ember.Component.extend({
+    {{#each model.data.children as |val|}}
     <div class="sub">
         {{#if val.data.thumbnail}}
             <img src={{val.data.thumbnail}}/>
@@ -16,5 +17,4 @@
         <p>Score: {{val.data.score}}</p>
     </div>
 {{/each}}
-
-{{outlet}}
+});
